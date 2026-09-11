@@ -2,12 +2,12 @@ import Foundation
 import AVKit
 import UIKit
 
-enum AirPlayError: LocalizedError, Equatable {
+public enum AirPlayError: LocalizedError, Equatable {
     case pickerAlreadyActive
     case presentationUnavailable
     case pickerButtonUnavailable
 
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .pickerAlreadyActive:
             return "The AirPlay picker is already being presented."
